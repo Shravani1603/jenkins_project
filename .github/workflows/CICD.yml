@@ -21,11 +21,11 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
-          application_name: 'DevopsProject'
+          application_name: 'Devops_Project'
           environment_name: 'DevopsProject-env'
           version_label: ${{ github.sha }}
           region: ap-south-1
-          deployment_package: DevopsProject-env.zip
+          deployment_package: DevopsProject.zip
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
