@@ -27,4 +27,4 @@ jobs:
           environment_name: 'DevopsProject-env'
           version_label: ${{github.sha}}
           region: ap-south-1
-          deployment_package: DevopsProject-env.zip
+          deployment_package: DevopsProject.zip
