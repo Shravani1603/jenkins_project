@@ -1,7 +1,7 @@
 {
   "name": "shravani-node-app",
   "version": "1.0.0",
-  "description": "A simple Express.js app deployed to AWS Elastic Beanstalk",
+  "description": "Node.js app for AWS Elastic Beanstalk",
   "main": "nodeapp.js",
   "scripts": {
     "start": "node nodeapp.js"
