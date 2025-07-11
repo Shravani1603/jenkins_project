@@ -1,0 +1,14 @@
+{
+  "name": "shravani-node-app",
+  "version": "1.0.0",
+  "description": "A simple Express.js app deployed to AWS Elastic Beanstalk",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Shravani Kene",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
