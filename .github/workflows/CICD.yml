@@ -18,6 +18,13 @@ jobs:
         run: npm install
       - name: Generate Deployment Package 
         run: zip -r DevopsProject.zip .
+      - name: Check AWS environment vars
+        run: |
+          echo "AWS_ACCESS_KEY_ID length: ${#AWS_ACCESS_KEY_ID}"
+          echo "AWS_SECRET_ACCESS_KEY length: ${#AWS_SECRET_ACCESS_KEY}"
+        env:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
